@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 févr. 2020, 11:34:27
+    Author     : KAYV
+*/
+.btn_connexion{
+    -fx-background-color:#FF7F7F ; 
+    -fx-text-fill: #fff;
+     -fx-background-radius: 5px;
+}
+
+.btn_connexion:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #FF7F7F;
+    -fx-border-color: #FF7F7F;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    
+}

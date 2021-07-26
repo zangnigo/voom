@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="zone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.InscriptionController">
+    <stylesheets>
+        <URL value="@inscription.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="370.0" style="-fx-background-color: #20120F;">
+         <children>
+            <ImageView fitHeight="260.0" fitWidth="274.0" layoutX="55.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Covoiturage-682x682.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="63.0" text="Bienvenue sur VroomCar" textFill="#d3d1d1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="407.0" text="Veuiller cliquer ici pour vous connnectez " textFill="#e4e3e3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="page_connexion" layoutX="71.0" layoutY="468.0" onAction="#open_connexion" prefHeight="32.0" prefWidth="228.0" styleClass="btn_inscription" stylesheets="@MainUI.css" text="Connectez-vous" textFill="#eeecec" />
+            <JFXButton fx:id="close" layoutX="302.0" layoutY="14.0" minHeight="19.0" minWidth="30.0" onAction="#close" prefHeight="30.0" prefWidth="54.0" styleClass="btn_inscription" stylesheets="@inscription.css" text="X" textFill="#eeecec" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="135.0" layoutY="44.0" prefHeight="47.0" prefWidth="130.0" style="-fx-background-color: #E45652;" text="  Inscrivez-vous" textAlignment="CENTER" textFill="#f2e4e4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="121.0" prefHeight="17.0" prefWidth="101.0" text="Nom d'utilisateur :" />
+      <Label layoutX="17.0" layoutY="159.0" prefHeight="17.0" prefWidth="101.0" text="Mot de passe :" />
+      <Label layoutX="17.0" layoutY="197.0" prefHeight="17.0" prefWidth="136.0" text="confirmer mot de passe :" />
+      <Label layoutX="14.0" layoutY="235.0" prefHeight="17.0" prefWidth="55.0" text="Nom :" />
+      <Label layoutX="14.0" layoutY="272.0" prefHeight="17.0" prefWidth="55.0" text="Prenoms :" />
+      <Label layoutX="13.0" layoutY="308.0" prefHeight="17.0" prefWidth="110.0" text="Date de naissance :" />
+      <Label layoutX="14.0" layoutY="347.0" prefHeight="17.0" prefWidth="55.0" text="Email :" />
+      <Label layoutX="14.0" layoutY="388.0" prefHeight="17.0" prefWidth="55.0" text="Contact :" />
+      <Label layoutX="13.0" layoutY="430.0" prefHeight="17.0" prefWidth="110.0" text="Contact Paiement :" />
+      <JFXButton fx:id="enregistrer" layoutX="235.0" layoutY="513.0" onAction="#inscrire" prefHeight="32.0" prefWidth="175.0" styleClass="btn_inscription" stylesheets="@inscription.css" text="Inscription" textFill="#eeecec" />
+      <JFXTextField fx:id="textU" layoutX="127.0" layoutY="109.0" prefHeight="25.0" prefWidth="260.0" unFocusColor="#4059a9" />
+      <JFXTextField fx:id="txtN" layoutX="62.0" layoutY="223.0" prefHeight="25.0" prefWidth="326.0" unFocusColor="#4059a9" />
+      <JFXPasswordField fx:id="textMdp" layoutX="127.0" layoutY="147.0" prefHeight="25.0" prefWidth="260.0" unFocusColor="#4059a9" />
+      <JFXPasswordField fx:id="textMDP_conf" layoutX="167.0" layoutY="185.0" prefHeight="25.0" prefWidth="219.0" unFocusColor="#4059a9" />
+      <JFXTextField fx:id="txtP" layoutX="85.0" layoutY="260.0" prefHeight="25.0" prefWidth="306.0" unFocusColor="#4059a9" />
+      <JFXDatePicker fx:id="date" defaultColor="#4059a9" layoutX="123.0" layoutY="294.0" prefHeight="28.0" prefWidth="260.0" />
+      <JFXTextField fx:id="mail" layoutX="62.0" layoutY="335.0" prefHeight="25.0" prefWidth="333.0" unFocusColor="#4059a9" />
+      <JFXTextField fx:id="num" layoutX="72.0" layoutY="376.0" prefHeight="25.0" prefWidth="326.0" unFocusColor="#4059a9" />
+      <JFXTextField fx:id="num_paie" layoutX="118.0" layoutY="418.0" prefHeight="25.0" prefWidth="283.0" unFocusColor="#4059a9" />
+      <JFXButton fx:id="reset" layoutX="44.0" layoutY="510.0" onAction="#reset" prefHeight="36.0" prefWidth="150.0" styleClass="btn_inscription" text="Reinitialiser" textFill="WHITE" />
+   </children>
+</AnchorPane>

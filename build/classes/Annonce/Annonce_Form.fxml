@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Annonce.Annonce_FormController">
+   <stylesheets>
+      <URL value="@../Client/page_client.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="prix" focusColor="#20120f" layoutX="164.0" layoutY="360.0" prefHeight="25.0" prefWidth="197.0" promptText="entrer un montant" unFocusColor="#20120f" />
+      <JFXButton fx:id="reset" layoutX="84.0" layoutY="459.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Reinitialiser" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une annonce">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="57.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="dep" focusColor="#20120f" layoutX="164.0" layoutY="64.0" prefHeight="25.0" prefWidth="197.0" promptText="Selectionner un départ" unFocusColor="#20120f" />
+      <Text fill="WHITE" layoutX="26.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure de départ :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="31.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de départ : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="18.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu de rencontre :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXDatePicker fx:id="date" layoutX="164.0" layoutY="206.0" prefHeight="28.0" prefWidth="197.0" promptText="Selectionner une date" />
+      <Label layoutX="86.0" layoutY="63.0" text="Départ :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="dest" focusColor="#20120f" layoutX="164.0" layoutY="112.0" prefHeight="25.0" prefWidth="197.0" promptText="Selectionner une destination" unFocusColor="#20120f" />
+      <JFXTimePicker fx:id="heure" layoutX="164.0" layoutY="154.0" prefHeight="28.0" prefWidth="197.0" promptText="Selectionner une heure" />
+      <JFXTextField fx:id="lieu" layoutX="164.0" layoutY="259.0" prefHeight="25.0" prefWidth="197.0" promptText="Entrer un lieux de rencontre " />
+      <Label layoutX="52.0" layoutY="360.0" text="Prix ( FRCFA) :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="314.0" text="Nombre de place : " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="place" layoutX="164.0" layoutY="314.0" prefHeight="25.0" prefWidth="197.0" promptText="sélectionner le nombre de place" />
+      <JFXComboBox fx:id="vehicule" layoutX="164.0" layoutY="409.0" prefHeight="25.0" prefWidth="197.0" promptText="Sélectionner un véhicule" />
+      <Label layoutX="86.0" layoutY="409.0" text="véhicule : " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="enregistrer" layoutX="282.0" layoutY="459.0" onAction="#enregistrer" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Enregistrer" textFill="WHITE" />
+   </children>
+</AnchorPane>

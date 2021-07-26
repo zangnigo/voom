@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="zoneReservation" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" stylesheets="@page_reservation.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reservation.Page_reservationController">
+   <children>
+      <VBox alignment="CENTER" layoutX="28.0" layoutY="99.0" prefHeight="200.0" prefWidth="247.0" style="-fx-background-color: #20120f;">
+         <children>
+            <JFXButton onAction="#infoReservationForm" prefHeight="226.0" prefWidth="228.0" styleClass="btn" stylesheets="@page_reservation.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="203.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/smartphone-10.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes réservations">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="291.0" layoutY="99.0" prefHeight="200.0" prefWidth="247.0" style="-fx-background-color: #20120f;">
+         <children>
+            <JFXButton onAction="#reservationForm" prefHeight="226.0" prefWidth="228.0" styleClass="btn" stylesheets="@page_reservation.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="231.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une réservation">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

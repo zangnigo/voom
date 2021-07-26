@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="partie" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Message.Voir_reservationController">
+   <stylesheets>
+      <URL value="@../Reservation/list_reservation.css" />
+   </stylesheets>
+   <children>
+      <TableView fx:id="table" layoutX="166.0" layoutY="65.0" prefHeight="430.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="ref" prefWidth="69.0" text="Ref reser" />
+            <TableColumn fx:id="refC" prefWidth="75.0" text="Ref client" />
+            <TableColumn fx:id="prix" prefWidth="87.0" text="Prix" />
+            <TableColumn fx:id="place" prefWidth="123.0" text="Place réservée(s)" />
+            <TableColumn fx:id="lieu" minWidth="0.0" prefWidth="175.0" text="Lieu de rencontre" />
+            <TableColumn fx:id="montant" minWidth="3.0" prefWidth="100.0" text="Total montant " />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="26.0" layoutY="209.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Actualiser" textFill="WHITE" />
+      <JFXButton layoutX="26.0" layoutY="139.0" onAction="#acceuil" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Acceuil" textFill="WHITE" />
+      <JFXButton layoutX="16.0" layoutY="268.0" onAction="#info" prefHeight="25.0" prefWidth="138.0" styleClass="btn" text="Info client" textFill="WHITE" />
+      <JFXButton layoutX="724.0" layoutY="14.0" minHeight="19.0" minWidth="30.0" onAction="#closeApp" prefHeight="30.0" prefWidth="54.0" styleClass="btn" stylesheets="@../Main/MainUI.css" text="X" textFill="#eeecec" />
+   </children>
+</AnchorPane>

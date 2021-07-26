@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="zoneP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vehicule.InfoVehiculeFormController">
+   <stylesheets>
+      <URL value="@../Permis/infopermisform.css" />
+   </stylesheets>
+   <children>
+      <Text layoutX="82.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher un véhicule" wrappingWidth="405.13671875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Label layoutX="92.0" layoutY="160.0" text="Matricule :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="box" layoutX="211.0" layoutY="163.0" prefHeight="25.0" prefWidth="202.0" promptText="Sélectionner une matricule" unFocusColor="#4059a9" />
+      <JFXButton layoutX="218.0" layoutY="269.0" onAction="#voir" prefHeight="25.0" prefWidth="114.0" styleClass="btn" text="Voir" />
+   </children>
+</AnchorPane>

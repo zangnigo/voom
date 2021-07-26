@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vehicule.Vehicule_FormController">
+   <stylesheets>
+      <URL value="@../Client/page_client.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="numCarteGrise" focusColor="#20120f" layoutX="213.0" layoutY="324.0" prefHeight="25.0" prefWidth="232.0" promptText="Entrer le numéro de carte grise" unFocusColor="#20120f" />
+      <JFXButton fx:id="update" layoutX="320.0" layoutY="409.0" onAction="#enregistrer" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Enregistrer" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="160.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un véhicule">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="138.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marque :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="139.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modèle :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="126.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule :" wrappingWidth="76.90625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de carte grise :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="reset" layoutX="138.0" layoutY="409.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Reinitialiser" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="138.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Couleur :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="marque" focusColor="#20120f" layoutX="213.0" layoutY="156.0" prefHeight="25.0" prefWidth="232.0" promptText="Entrer la marque du véhicule" unFocusColor="#20120f" />
+      <JFXTextField fx:id="modele" focusColor="#20120f" layoutX="213.0" layoutY="197.0" prefHeight="25.0" prefWidth="232.0" promptText="Entrer le modèle du véhicule" unFocusColor="#20120f" />
+      <JFXTextField fx:id="couleur" focusColor="#20120f" layoutX="213.0" layoutY="240.0" prefHeight="25.0" prefWidth="232.0" promptText="Entrer la couleur du véhicule" unFocusColor="#20120f" />
+      <JFXTextField fx:id="matricule" focusColor="#20120f" layoutX="213.0" layoutY="283.0" prefHeight="25.0" prefWidth="232.0" promptText="Entrer le matricule du véhicule" unFocusColor="#20120f" />
+   </children>
+</AnchorPane>

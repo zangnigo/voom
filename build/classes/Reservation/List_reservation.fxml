@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="partie" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reservation.List_reservationController">
+    <stylesheets>
+        <URL value="@list_reservation.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="table" layoutX="260.0" layoutY="63.0" prefHeight="430.0" prefWidth="526.0">
+        <columns>
+            <TableColumn fx:id="ref" prefWidth="75.0" text="Référence" />
+          <TableColumn fx:id="heure" prefWidth="99.0" text="Heure" />
+          <TableColumn fx:id="prix" prefWidth="75.0" text="Prix" />
+            <TableColumn fx:id="place" prefWidth="75.0" text="Place(s)" />
+            <TableColumn fx:id="lieu" prefWidth="200.0" text="Lieu de rencontre" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="ajouter" layoutX="31.0" layoutY="288.0" onAction="#reservation" prefHeight="25.0" prefWidth="138.0" styleClass="btn" text="Faire une réservation" textFill="WHITE" />
+      <JFXButton fx:id="reset" layoutX="41.0" layoutY="220.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Actualiser" textFill="WHITE" />
+      <JFXButton fx:id="acceuil" layoutX="41.0" layoutY="146.0" onAction="#acceuil" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Acceuil" textFill="WHITE" />
+      <JFXButton fx:id="info" layoutX="31.0" layoutY="356.0" onAction="#info" prefHeight="25.0" prefWidth="138.0" styleClass="btn_reset" text="Info annonceur" textFill="WHITE" />
+      <JFXButton fx:id="btn_close" layoutX="724.0" layoutY="14.0" minHeight="19.0" minWidth="30.0" onAction="#closeApp" prefHeight="30.0" prefWidth="54.0" styleClass="btn" stylesheets="@../Main/MainUI.css" text="X" textFill="#eeecec" />
+   </children>
+</AnchorPane>

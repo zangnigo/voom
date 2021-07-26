@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Client.InfoClientController">
+    <stylesheets>
+        <URL value="@infoclient.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="63.0" layoutY="79.0" text="Nom d'utilisateur :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="116.0" text="Nom :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="154.0" text="Prénoms :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="195.0" text="Date de Naissance :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="232.0" text="Contact :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="265.0" text="Contact paiement :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="307.0" text="Email :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="149.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info utilisateur">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="user" layoutX="196.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="nom" layoutX="196.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="prenom" layoutX="196.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" layoutX="196.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="num1" layoutX="196.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="num2" layoutX="196.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="email" layoutX="196.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.89453125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

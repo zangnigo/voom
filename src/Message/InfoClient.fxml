@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mur" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="359.0" prefWidth="522.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Message.InfoClientController">
+    <stylesheets>
+        <URL value="@infoclient.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="169.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Client" wrappingWidth="184.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="47.0" layoutY="97.0" prefHeight="21.0" prefWidth="196.0" text="Numéro de référence client :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="refC" layoutX="267.0" layoutY="95.0" prefHeight="25.0" prefWidth="102.0" />
+      <Label layoutX="128.0" layoutY="201.0" text="Nom :" />
+      <Label layoutX="108.0" layoutY="244.0" text="Prénoms :" />
+      <Label layoutX="111.0" layoutY="289.0" text="Contact :" />
+      <Text fx:id="nom" layoutX="181.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="prenom" layoutX="181.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="numero" layoutX="181.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="169.0" layoutY="155.0" onAction="#voir" prefHeight="25.0" prefWidth="53.0" styleClass="btn" text="Voir" />
+      <JFXButton layoutX="265.0" layoutY="155.0" onAction="#reset" styleClass="btn" text="actualiser" />
+      <JFXButton layoutX="456.0" layoutY="24.0" onAction="#closeApp" styleClass="btn" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Label layoutX="10.0" layoutY="58.0" prefHeight="21.0" prefWidth="233.0" text="Numéro de référence réservation :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ref" layoutX="267.0" layoutY="56.0" prefHeight="25.0" prefWidth="102.0" />
+   </children>
+</AnchorPane>

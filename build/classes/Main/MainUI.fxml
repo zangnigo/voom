@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MainUIController">
+    <children>
+        <AnchorPane fx:id="zone1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="370.0" style="-fx-background-color: #20120F;">
+            <children>
+                <ImageView fitHeight="260.0" fitWidth="274.0" layoutX="40.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/Covoiturage-682x682.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="36.0" text="Bienvenue sur VroomCar" textFill="#d3d1d1">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+               
+                <Label layoutX="26.0" layoutY="366.0" text="Veuiller cliquer ici pour vous inscrire " textFill="#e4e3e3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="open_incription" buttonType="RAISED" layoutX="49.0" layoutY="445.0" onAction="#open_inscription" prefHeight="32.0" prefWidth="228.0" ripplerFill="#e42c54" styleClass="btn_connexion" stylesheets="@MainUI.css" text="Inscrivez-vous" textFill="#eeecec">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            </children>
+        </AnchorPane>
+        <JFXButton fx:id="login" layoutX="471.0" layoutY="367.0" onAction="#login" prefHeight="32.0" prefWidth="308.0" styleClass="btn_connexion" stylesheets="@MainUI.css" text="Connexion" textFill="#eeecec" />
+        <JFXPasswordField fx:id="mdp_user" focusColor="#0480d8" labelFloat="true" layoutX="491.0" layoutY="285.0" prefHeight="30.0" prefWidth="267.0" promptText="Mot de passe" unFocusColor="#4059a9">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXPasswordField>
+        <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="438.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/icons8-password-1-40.png" />
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="nom_user" labelFloat="true" layoutX="485.0" layoutY="200.0" prefHeight="30.0" prefWidth="267.0" promptText="Nom d'utilisateur" unFocusColor="#4059a9" />
+        <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="434.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/users.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="528.0" layoutY="106.0" prefHeight="47.0" prefWidth="130.0" style="-fx-background-color: #E45652;" text="Connectez-vous" textAlignment="CENTER" textFill="#f2e4e4">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btn_close" layoutX="739.0" layoutY="14.0" minHeight="19.0" minWidth="30.0" onAction="#closeApp" prefHeight="30.0" prefWidth="54.0" styleClass="btn_connexion" stylesheets="@MainUI.css" text="X" textFill="#eeecec" />
+    </children>
+</AnchorPane>

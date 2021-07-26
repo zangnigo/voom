@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Page_clientController">
+    <stylesheets>
+        <URL value="@page_client.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="nom_mod" focusColor="#20120f" layoutX="160.0" layoutY="97.0" prefHeight="25.0" prefWidth="199.0" promptText="Entrer un nouveau nom" unFocusColor="#20120f" />
+      <JFXTextField fx:id="prenom_mod" focusColor="#20120f" layoutX="160.0" layoutY="143.0" prefHeight="25.0" prefWidth="199.0" promptText="Entrer de nouveaux prénoms" unFocusColor="#20120f" />
+      <JFXPasswordField fx:id="mdp_mod" focusColor="#20120f" layoutX="160.0" layoutY="240.0" prefHeight="25.0" prefWidth="199.0" promptText="Mot de passe" unFocusColor="#20120f" />
+      <JFXPasswordField fx:id="cmdp_mod" focusColor="#20120f" layoutX="160.0" layoutY="288.0" prefHeight="25.0" prefWidth="199.0" promptText="Confirmer mot de passe" unFocusColor="#20120f" />
+      <JFXButton fx:id="update" layoutX="301.0" layoutY="362.0" onAction="#modifier" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Modifier" />
+      <JFXTextField fx:id="user_mod" focusColor="#20120f" layoutX="160.0" layoutY="189.0" prefHeight="25.0" prefWidth="199.0" promptText="Entrer un nom d'utilisateur" unFocusColor="#20120f" />
+      <Text fill="WHITE" layoutX="103.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier  vos informations">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="reset" layoutX="160.0" layoutY="362.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Reinitialiser" />
+   </children>
+</AnchorPane>

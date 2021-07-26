@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="zone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MenuAppController">
+    <stylesheets>
+        <URL value="@menuapp.css" />
+    </stylesheets>
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #20120F;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur VROOMCAR" textAlignment="CENTER" wrappingWidth="249.208984375">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="250.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton onAction="#page_client" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Client" wrappingWidth="154.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="244.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton fx:id="page_permis" onAction="#page_permis" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/id-card-5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Permis" wrappingWidth="154.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="250.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton onAction="#page_vehicule" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/vech.jpg" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Véhicules" wrappingWidth="170.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="242.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton fx:id="annonce" onAction="#page_annonce" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/smartphone-7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Annonces" wrappingWidth="155.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="250.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton onAction="#page_reservation" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/smartphone-9.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Réservations" wrappingWidth="153.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="250.0" style="-fx-background-color: #FF7F7F;">
+               <children>
+                  <JFXButton onAction="#page_message" prefHeight="72.0" prefWidth="34.0" styleClass="btn_menu" stylesheets="@menuapp.css" text=" " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/sms-call.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Text fill="#fffafa" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18px;" text="Messages" wrappingWidth="155.1376953125">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane layoutX="250.0" layoutY="-1.0" prefHeight="96.0" prefWidth="550.0" style="-fx-background-color: #20120F;">
+         <children>
+            <JFXButton layoutX="488.0" layoutY="13.0" minHeight="19.0" minWidth="30.0" onAction="#close" prefHeight="30.0" prefWidth="54.0" styleClass="btn_inscription" stylesheets="@inscription.css" text="X" textFill="#eeecec" />
+            <JFXButton fx:id="deconnecte" layoutX="434.0" layoutY="51.0" minHeight="19.0" minWidth="30.0" onAction="#deconnecte" prefHeight="30.0" prefWidth="109.0" styleClass="btn_deco" stylesheets="@menuapp.css" text="Deconnection" textFill="#eeecec" />
+            <Text fill="WHITE" layoutX="179.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deconnecter vous par ici">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="96.0" fitWidth="166.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/2020-01-31-06-58-48-569598692.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="page" layoutX="250.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="550.0" style="-fx-background-color: #20120f;">
+         <children>
+            <ImageView fitHeight="325.0" fitWidth="436.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fffefe" layoutX="121.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez maintenant profiter de nos services du menus" wrappingWidth="325.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

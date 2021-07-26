@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="550.0" style="-fx-background-color: #00D6DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Permis.Permis_formController">
+   <stylesheets>
+      <URL value="@../Client/page_client.css" />
+   </stylesheets>
+   <children>
+      <JFXTextField fx:id="numPermis" focusColor="#20120f" layoutX="205.0" layoutY="314.0" prefHeight="25.0" prefWidth="182.0" promptText="Entrer le numéro du permis" unFocusColor="#20120f" />
+      <JFXButton fx:id="update" layoutX="320.0" layoutY="409.0" onAction="#enregistrer" prefHeight="25.0" prefWidth="117.0" styleClass="btn" text="Enregistrer" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="168.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un permis">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="114.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="box" focusColor="#20120f" layoutX="207.0" layoutY="169.0" prefHeight="25.0" prefWidth="182.0" promptText="Selectionner une catégorie" unFocusColor="#20120f" />
+      <Text fill="WHITE" layoutX="51.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de délivrance : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="63.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'expiration : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="51.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de permis : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXDatePicker fx:id="dateD" layoutX="205.0" layoutY="207.0" prefHeight="28.0" prefWidth="182.0" promptText="Selectionner une date" />
+      <JFXDatePicker fx:id="dateE" layoutX="207.0" layoutY="257.0" prefHeight="28.0" prefWidth="182.0" promptText="Selectionner une date" />
+      <JFXButton fx:id="reset" layoutX="138.0" layoutY="409.0" onAction="#reset" prefHeight="25.0" prefWidth="117.0" styleClass="btn_reset" text="Reinitialiser" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mur" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="333.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reservation.ReserverController">
+    <stylesheets>
+        <URL value="@reserver.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="147.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faite votre réservation" wrappingWidth="211.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="61.0" layoutY="97.0" prefHeight="21.0" prefWidth="155.0" text="Numéro de référence :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ref" layoutX="216.0" layoutY="95.0" prefHeight="25.0" prefWidth="102.0" />
+      <JFXButton layoutX="358.0" layoutY="95.0" onAction="#reset" styleClass="btn" text="actualiser" />
+      <JFXButton layoutX="456.0" layoutY="24.0" onAction="#closeApp" styleClass="btn" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Label layoutX="61.0" layoutY="169.0" text="Nombre de place : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="place" layoutX="209.0" layoutY="169.0" prefHeight="25.0" prefWidth="197.0" promptText="sélectionner le nombre de place" />
+      <JFXButton layoutX="196.0" layoutY="240.0" onAction="#reserver" prefHeight="25.0" prefWidth="102.0" styleClass="btn" text="Reserver" />
+   </children>
+</AnchorPane>

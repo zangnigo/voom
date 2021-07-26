@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mur" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Reservation.InfoAnnonceurController">
+    <stylesheets>
+        <URL value="@infoannonceur.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="137.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information Annonceur" wrappingWidth="211.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="51.0" layoutY="87.0" prefHeight="21.0" prefWidth="155.0" text="Numéro de référence :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ref" layoutX="206.0" layoutY="85.0" prefHeight="25.0" prefWidth="102.0" />
+      <Label layoutX="58.0" layoutY="131.0" text="Nom :" />
+      <Label layoutX="38.0" layoutY="174.0" text="Prénoms :" />
+      <Label layoutX="41.0" layoutY="219.0" text="Contact :" />
+      <Label layoutX="38.0" layoutY="308.0" text="Marque du vhéhicule :" />
+      <Label layoutX="42.0" layoutY="345.0" text="Modèle du véhicule :" />
+      <Label layoutX="37.0" layoutY="386.0" text="Matricule du véhicule :" />
+      <Label layoutX="42.0" layoutY="427.0" text="Couleur du véhicule :" />
+      <Text fx:id="nom" layoutX="111.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="prenom" layoutX="111.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="numero" layoutX="111.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="marque" layoutX="167.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="modele" layoutX="167.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="matricule" layoutX="167.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="couleur" layoutX="167.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="322.0" layoutY="85.0" onAction="#voir" prefHeight="25.0" prefWidth="53.0" styleClass="btn" text="Voir" />
+      <JFXButton layoutX="392.0" layoutY="85.0" onAction="#reset" styleClass="btn" text="actualiser" />
+      <JFXButton layoutX="446.0" layoutY="14.0" onAction="#closeApp" styleClass="btn" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <Text layoutX="168.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicule info" wrappingWidth="148.712890625">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
